@@ -1,24 +1,8 @@
-/********************************************************************************
-*Alloc.h contains macros designed to simplify and standardize the form of       *
-*functions the used in dynamic memory allocation, excluding free().             *
-*                                                                               *
-*The goal here is to make it so the programmer does not have to remember the    *
-*different syntax associated with malloc(), calloc, and realloc(). In addition, *
-*Alloc.h includes three macros geared towards allocating memory for objects     *
-*that the programmer wishes to be null-terminated. Descriptions of all six      *
-*macros are found underneath their definitions.                                 *
-*                                                                               *
-*Syntax has been simplified by replacing the function-dependent variable lists  *
-*with a standdardized one: Amount, Variable. The programmer should pass the     *
-*amount of memory slots they wish to allocate as Amount, and the pointer to     *
-*which the memory should be allocated as Variable.                              *
-*                                                                               *
-*Last updated: 08/30/2020                                                       *
-*By: Ben Canon                                                                  *
-********************************************************************************/
 
-#ifndef Alloc_h
-#define Alloc_h
+
+#ifndef ALLOC_H
+#define ALLOC_H
+
 
 #include <stdlib.h>
 /*This header contains the prototypes for malloc(), calloc(), and realloc().*/
